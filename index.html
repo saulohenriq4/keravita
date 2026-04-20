@@ -1,836 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Keravita Pro Review | Nail Support</title>
-  <meta
-    name="description"
-    content="Independent Keravita Pro review with a clean overview, visual comparison, and direct access to the official website."
-  />
-  <style>
-    :root{
-      --bg:#f4fbf6;
-      --bg-soft:#edf9f1;
-      --card:#ffffff;
-      --soft:#f7fcf8;
-      --line:#dceee1;
-      --text:#123126;
-      --muted:#5a7467;
-      --green:#1fbe73;
-      --green-dark:#128a53;
-      --green-soft:#eaf8ef;
-      --accent:#ffc83d;
-      --shadow:0 18px 40px rgba(16,24,40,.06);
-      --radius:24px;
-      --max:1120px;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keravita Pro Review</title>
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter, Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(circle at top right, rgba(31,190,115,.08), transparent 24%),
-        linear-gradient(180deg,#fcfffd 0%, var(--bg) 100%);
-      color:var(--text);
-      line-height:1.55;
-    }
-    img{display:block;max-width:100%}
-    a{text-decoration:none;color:inherit}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#f4fbf6;
+  color:#123126;
+}
 
-    .top-checking{
-      background:linear-gradient(90deg,#eafff0 0%, #f8fff9 100%);
-      border-bottom:1px solid rgba(18,138,83,.08);
-      color:#1f6947;
-      font-size:13px;
-      font-weight:800;
-    }
-    .top-checking .wrap{
-      padding-top:10px;
-      padding-bottom:10px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      text-align:center;
-    }
-    .live-dot{
-      width:9px;
-      height:9px;
-      border-radius:999px;
-      background:#1fbe73;
-      box-shadow:0 0 0 6px rgba(31,190,115,.12);
-      flex:0 0 auto;
-    }
+/* TOPO */
+.top-checking{
+  background:#eafff0;
+  text-align:center;
+  padding:10px;
+  font-weight:bold;
+  color:#1f6947;
+}
 
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:50;
-      background:rgba(255,255,255,.92);
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(18,138,83,.08);
-    }
-    .topbar-inner{
-      min-height:72px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-    }
-    .brand-logo{
-      height:38px;
-      width:auto;
-      object-fit:contain;
-    }
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      border:none;
-      border-radius:999px;
-      padding:16px 24px;
-      font-weight:800;
-      letter-spacing:-.01em;
-      transition:.2s ease;
-      text-align:center;
-      cursor:pointer;
-    }
-    .btn:hover{transform:translateY(-1px)}
-    .btn-green{
-      color:#fff;
-      background:linear-gradient(180deg,var(--green),var(--green-dark));
-      box-shadow:0 14px 28px rgba(31,190,115,.24);
-    }
-    .btn-white{
-      color:var(--text);
-      background:#fff;
-      border:1px solid var(--line);
-    }
+.brand{
+  font-weight:900;
+  font-size:22px;
+  color:#1fbe73;
+}
 
-    .pulse{
-      animation:pulse 1.8s infinite;
-    }
-    @keyframes pulse{
-      0%{transform:scale(1)}
-      50%{transform:scale(1.03)}
-      100%{transform:scale(1)}
-    }
+.btn{
+  background:#1fbe73;
+  color:#fff;
+  padding:12px 20px;
+  border-radius:999px;
+  font-weight:bold;
+  text-decoration:none;
+}
 
-    .hero{
-      padding:18px 0 26px;
-    }
-    .hero-shell{
-      background:linear-gradient(180deg,#ffffff 0%, #f4fbf6 100%);
-      border:1px solid var(--line);
-      border-radius:32px;
-      box-shadow:var(--shadow);
-      padding:22px;
-    }
-    .hero-grid{
-      display:grid;
-      grid-template-columns:.95fr 1.05fr;
-      gap:22px;
-      align-items:center;
-    }
+/* HERO */
+.hero{
+  padding:20px;
+}
 
-    .hero-media{
-      background:linear-gradient(180deg,#ffffff 0%, #f1fbf5 100%);
-      border:1px solid var(--line);
-      border-radius:28px;
-      padding:16px;
-      box-shadow:var(--shadow);
-    }
-    .hero-media-box{
-      border-radius:22px;
-      overflow:hidden;
-      border:1px solid #e6f3ea;
-      background:#f7fff9;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:10px;
-      min-height:370px;
-    }
-    .hero-media-box img{
-      width:100%;
-      max-width:420px;
-      height:auto;
-      object-fit:contain;
-    }
+.count{
+  background:#fff8e7;
+  padding:10px;
+  border-radius:20px;
+  display:inline-block;
+  margin-bottom:10px;
+}
 
-    .badge-grid{
-      margin-top:14px;
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:10px;
-    }
-    .seal-card{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:12px 10px;
-      text-align:center;
-      box-shadow:var(--shadow);
-    }
-    .seal-icon{
-      width:44px;
-      height:44px;
-      margin:0 auto 8px;
-      border-radius:999px;
-      display:grid;
-      place-items:center;
-      font-size:20px;
-      background:linear-gradient(180deg,#f5fff8 0%, #e9f8ef 100%);
-      border:1px solid #d8ecdf;
-    }
-    .seal-title{
-      display:block;
-      font-size:13px;
-      font-weight:800;
-      line-height:1.2;
-      color:var(--text);
-    }
-    .seal-sub{
-      display:block;
-      margin-top:4px;
-      font-size:11px;
-      color:var(--muted);
-      line-height:1.2;
-    }
+h1{
+  font-size:32px;
+}
 
-    .alert{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      background:#fff8e7;
-      color:#9a6a00;
-      border:1px solid #f2dfaa;
-      border-radius:999px;
-      padding:10px 14px;
-      font-size:13px;
-      font-weight:800;
-      margin-bottom:14px;
-    }
+.sub{
+  color:#5a7467;
+}
 
-    .headline{
-      margin:0 0 12px;
-      font-size:clamp(38px,5vw,64px);
-      line-height:.94;
-      letter-spacing:-.06em;
-      max-width:10ch;
-    }
-    .subhead{
-      margin:0 0 16px;
-      font-size:18px;
-      color:#456154;
-      max-width:34ch;
-    }
+/* IMAGEM */
+.img-box{
+  text-align:center;
+  margin:20px 0;
+}
 
-    .trust-row{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin:0 0 18px;
-    }
-    .trust-pill{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:9px 13px;
-      font-size:13px;
-      font-weight:700;
-      color:#426050;
-    }
+.img-box img{
+  width:80%;
+  max-width:300px;
+}
 
-    .benefits{
-      display:grid;
-      gap:10px;
-      margin:0 0 18px;
-    }
-    .benefit{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-weight:700;
-      color:#203b2f;
-    }
-    .benefit .check{
-      width:26px;
-      height:26px;
-      min-width:26px;
-      display:grid;
-      place-items:center;
-      border-radius:999px;
-      background:var(--green-soft);
-      color:var(--green-dark);
-      font-weight:900;
-    }
+/* BENEFICIOS */
+.list{
+  margin:15px 0;
+}
 
-    .cta-box{
-      background:linear-gradient(180deg,#fbfffc 0%, #eef9f2 100%);
-      border:1px solid var(--line);
-      border-radius:24px;
-      padding:18px;
-    }
-    .cta-box h3{
-      margin:0 0 8px;
-      font-size:28px;
-      line-height:1.04;
-      letter-spacing:-.04em;
-    }
-    .cta-box p{
-      margin:0 0 14px;
-      color:var(--muted);
-    }
+.list div{
+  margin:8px 0;
+}
 
-    section{
-      padding:18px 0;
-    }
+/* CTA */
+.cta{
+  background:#eef9f2;
+  padding:20px;
+  border-radius:20px;
+  margin-top:15px;
+}
 
-    .section-title{
-      margin:0 0 10px;
-      font-size:clamp(28px,3.2vw,42px);
-      line-height:1.04;
-      letter-spacing:-.04em;
-    }
-    .section-sub{
-      margin:0 0 18px;
-      color:var(--muted);
-      max-width:62ch;
-    }
+/* DEPOIMENTOS */
+.reviews{
+  padding:20px;
+}
 
-    .grid-3{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-    .grid-2{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:18px;
-    }
+.review{
+  background:#fff;
+  padding:15px;
+  border-radius:15px;
+  margin-bottom:10px;
+}
 
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:22px;
-      box-shadow:var(--shadow);
-    }
-    .card h3{
-      margin:0 0 8px;
-      font-size:24px;
-      letter-spacing:-.03em;
-    }
-    .card p{
-      margin:0;
-      color:var(--muted);
-    }
-    .icon{
-      width:50px;
-      height:50px;
-      display:grid;
-      place-items:center;
-      border-radius:16px;
-      background:var(--green-soft);
-      margin-bottom:14px;
-      font-size:22px;
-    }
+/* STICKY */
+.sticky{
+  position:fixed;
+  bottom:10px;
+  left:10px;
+  right:10px;
+}
 
-    .image-card{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:28px;
-      padding:14px;
-      box-shadow:var(--shadow);
-    }
-    .image-frame{
-      width:100%;
-      border-radius:20px;
-      overflow:hidden;
-      background:#fff;
-      border:1px solid #eef5f0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .image-frame.problem,
-    .image-frame.pain{
-      min-height:250px;
-      max-height:300px;
-      padding:8px;
-    }
-    .image-frame.problem img,
-    .image-frame.pain img{
-      width:100%;
-      max-height:280px;
-      object-fit:cover;
-      object-position:center;
-    }
-
-    .image-note{
-      margin-top:12px;
-      font-size:15px;
-      color:#415c4d;
-    }
-
-    .before-after{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:28px;
-      padding:14px;
-      box-shadow:var(--shadow);
-    }
-    .before-after-frame{
-      border-radius:22px;
-      overflow:hidden;
-      border:1px solid #eef5f0;
-      background:#fff;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:10px;
-    }
-    .before-after-frame img{
-      width:100%;
-      max-width:760px;
-      max-height:330px;
-      object-fit:contain;
-    }
-
-    .reviews{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-    .review-card{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:24px;
-      padding:20px;
-      box-shadow:var(--shadow);
-    }
-    .review-stars{
-      color:#ffb800;
-      font-size:18px;
-      margin-bottom:10px;
-      letter-spacing:1px;
-    }
-    .review-text{
-      color:var(--muted);
-      font-size:15px;
-      margin-bottom:12px;
-    }
-    .review-name{
-      font-weight:800;
-      color:var(--text);
-      font-size:14px;
-    }
-
-    .faq{
-      display:grid;
-      gap:14px;
-    }
-    .faq details{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:18px 20px;
-      box-shadow:var(--shadow);
-    }
-    .faq summary{
-      cursor:pointer;
-      font-weight:800;
-      list-style:none;
-      color:var(--text);
-    }
-    .faq summary::-webkit-details-marker{display:none}
-    .faq p{
-      margin:12px 0 0;
-      color:var(--muted);
-    }
-
-    .cta-band{
-      background:linear-gradient(135deg,#154f34 0%, #1a7a4d 100%);
-      color:#fff;
-      border-radius:30px;
-      padding:28px 24px;
-      box-shadow:0 22px 44px rgba(21,79,52,.18);
-    }
-    .cta-band h3{
-      margin:0 0 8px;
-      font-size:34px;
-      line-height:1;
-      letter-spacing:-.04em;
-    }
-    .cta-band p{
-      margin:0 0 16px;
-      color:rgba(255,255,255,.9);
-      max-width:46ch;
-    }
-
-    .disclaimer{
-      padding:34px 0 90px;
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    .sticky-cta{
-      display:none;
-    }
-
-    @media (max-width: 980px){
-      .hero-grid,.grid-3,.grid-2,.reviews,.badge-grid{
-        grid-template-columns:1fr;
-      }
-      .headline{max-width:none}
-      .subhead{max-width:none}
-    }
-
-    @media (max-width: 720px){
-      .wrap{padding:0 16px}
-      .topbar-inner{
-        min-height:62px;
-      }
-      .brand-logo{
-        height:32px;
-      }
-      .hero{
-        padding-top:14px;
-      }
-      .hero-shell{
-        padding:14px;
-      }
-      .hero-grid{
-        gap:16px;
-      }
-      .hero-media{
-        order:1;
-      }
-      .hero-copy{
-        order:2;
-      }
-      .headline{
-        font-size:34px;
-        line-height:.98;
-      }
-      .subhead{
-        font-size:16px;
-      }
-      .btn{
-        width:100%;
-      }
-      .hero-media-box{
-        min-height:250px;
-        padding:8px;
-      }
-      .hero-media-box img{
-        max-width:260px;
-      }
-      .image-frame.problem,
-      .image-frame.pain{
-        min-height:200px;
-        max-height:240px;
-      }
-      .image-frame.problem img,
-      .image-frame.pain img{
-        max-height:220px;
-      }
-      .before-after-frame img{
-        max-height:240px;
-      }
-      .card,
-      .review-card{
-        padding:20px;
-      }
-      .cta-band h3{
-        font-size:28px;
-      }
-      .trust-pill{
-        width:100%;
-        text-align:center;
-      }
-
-      .sticky-cta{
-        display:block;
-        position:fixed;
-        left:14px;
-        right:14px;
-        bottom:14px;
-        z-index:99;
-      }
-      .sticky-cta .btn{
-        width:100%;
-        box-shadow:0 16px 30px rgba(31,190,115,.28);
-      }
-    }
-  </style>
+</style>
 </head>
+
 <body>
 
-  <div class="top-checking">
-    <div class="wrap">
-      <span class="live-dot"></span>
-      <span>People are checking this today • Official deal may refresh soon</span>
-    </div>
-  </div>
-
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-  <div style="
-  font-weight:900;
-  font-size:24px;
-  background:linear-gradient(90deg,#1fbe73,#128a53);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  letter-spacing:-0.5px;
-">
-  Keravita Pro™
+<div class="top-checking">
+● People are checking this today • Deal may refresh soon
 </div>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <div class="hero-shell">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <div class="alert">⏰ Limited-time check • Offer refresh in <span id="countdown">07:58:47</span></div>
+<div class="topbar">
+<div class="brand">Keravita Pro™</div>
+<a href="#" class="btn">Official Website</a>
+</div>
 
-              <h1 class="headline">Embarrassed By Nail Fungus Or Foot Discomfort?</h1>
+<div class="hero">
 
-              <p class="subhead">
-                This independent Keravita Pro review shows why so many people are checking this inside-out support formula to improve nail appearance and daily confidence.
-              </p>
+<div class="count">
+⏰ Offer refresh in <span id="timer">07:59:30</span>
+</div>
 
-              <div class="trust-row">
-                <div class="trust-pill">⭐⭐⭐⭐⭐ Independent review</div>
-                <div class="trust-pill">✔ Updated for 2026</div>
-                <div class="trust-pill">🔒 Official site access</div>
-              </div>
+<h1>Struggling With Nail Fungus?</h1>
 
-              <div class="benefits">
-                <div class="benefit"><span class="check">✓</span> Simple daily capsule routine</div>
-                <div class="benefit"><span class="check">✓</span> Popular with appearance-focused buyers</div>
-                <div class="benefit"><span class="check">✓</span> Designed for inside-out support</div>
-              </div>
+<p class="sub">
+This simple daily routine is getting attention from people who want cleaner, healthier-looking nails.
+</p>
 
-              <div class="cta-box">
-                <h3>Want To Check Today’s Official Deal?</h3>
-                <p>See the official website, current package options, and availability before this offer refreshes.</p>
-                <a href="#" class="btn btn-green pulse">🔥 Check Today's Official Deal</a>
-              </div>
-            </div>
+<div class="img-box">
+<img src="keravita.jpg">
+</div>
 
-            <div class="hero-media">
-              <div class="hero-media-box">
-                <img src="keravita.jpg" alt="Keravita Pro bottle" />
-              </div>
+<div class="list">
+<div>✔ Natural formula</div>
+<div>✔ Easy daily routine</div>
+<div>✔ Popular in the US</div>
+</div>
 
-              <div class="badge-grid">
-                <div class="seal-card">
-                  <div class="seal-icon">🌿</div>
-                  <span class="seal-title">Natural Formula</span>
-                  <span class="seal-sub">Clean wellness positioning</span>
-                </div>
+<div class="cta">
+<h3>Check Today’s Official Deal</h3>
+<a href="#" class="btn">🔥 Get Discount Now</a>
+</div>
 
-                <div class="seal-card">
-                  <div class="seal-icon">🛡️</div>
-                  <span class="seal-title">100% Guarantee</span>
-                  <span class="seal-sub">Trust-focused presentation</span>
-                </div>
+</div>
 
-                <div class="seal-card">
-                  <div class="seal-icon">🇺🇸</div>
-                  <span class="seal-title">Made In USA</span>
-                  <span class="seal-sub">Premium visual trust cue</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="reviews">
+<h2>What People Are Saying</h2>
 
-    <section>
-      <div class="wrap">
-        <h2 class="section-title">Why People Start Looking For A Better Option</h2>
-        <p class="section-sub">
-          Nail appearance problems can quietly affect confidence for a long time. For many buyers, the issue becomes serious when discoloration, rough texture, and discomfort start getting harder to ignore.
-        </p>
+<div class="review">
+★★★★★ “Looks way more trustworthy than others I saw.” – Sarah
+</div>
 
-        <div class="grid-3">
-          <div class="card">
-            <div class="icon">🦶</div>
-            <h3>Visible Nail Changes</h3>
-            <p>Yellowing, roughness, and thickening are usually what make people start searching for help.</p>
-          </div>
+<div class="review">
+★★★★★ “Simple and easy to follow routine.” – Mike
+</div>
 
-          <div class="card">
-            <div class="icon">⚠️</div>
-            <h3>Daily Discomfort</h3>
-            <p>Sensitivity and irritation can make the issue feel much bigger than just appearance.</p>
-          </div>
+<div class="review">
+★★★★★ “I liked the clean approach.” – Linda
+</div>
 
-          <div class="card">
-            <div class="icon">👀</div>
-            <h3>Lower Confidence</h3>
-            <p>Many people avoid sandals, barefoot settings, or situations where their feet are visible.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+</div>
 
-    <section>
-      <div class="wrap grid-2">
-        <div class="image-card">
-          <div class="image-frame problem">
-            <img src="unhas2.jfif" alt="Example of nail fungus appearance" />
-          </div>
-          <div class="image-note">
-            Discoloration, thick nails, and rough texture are often what push people to finally take action.
-          </div>
-        </div>
+<div class="sticky">
+<a href="#" class="btn">🔥 Check Official Website</a>
+</div>
 
-        <div class="image-card">
-          <div class="image-frame pain">
-            <img src="dor.jfif" alt="Foot discomfort example" />
-          </div>
-          <div class="image-note">
-            It is not only about looks — discomfort and sensitivity can affect comfort, confidence, and daily routine.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <h2 class="section-title">See The Difference In Nail Appearance</h2>
-        <p class="section-sub">
-          This comparison helps visitors quickly understand why products in this category get so much attention.
-        </p>
-
-        <div class="before-after">
-          <div class="before-after-frame">
-            <img src="unhas.jfif" alt="Before and after nail appearance comparison" />
-          </div>
-        </div>
-
-        <div style="margin-top:18px;">
-          <a href="#" class="btn btn-green">✔ See Available Packages</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <h2 class="section-title">What Some Buyers Like About It</h2>
-        <p class="section-sub">
-          These are the kinds of comments people usually look for before checking the official website.
-        </p>
-
-        <div class="reviews">
-          <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <div class="review-text">
-              “I liked that it felt more like a complete daily routine instead of a random quick fix. The official site explained everything clearly.”
-            </div>
-            <div class="review-name">— Sarah M.</div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <div class="review-text">
-              “What caught my attention was the cleaner presentation and the fact that it focuses on support from the inside.”
-            </div>
-            <div class="review-name">— James R.</div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <div class="review-text">
-              “I mostly wanted something that looked more trustworthy than the usual products I was seeing online.”
-            </div>
-            <div class="review-name">— Linda T.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="cta-band">
-          <h3>Ready To Check The Official Keravita Pro Website?</h3>
-          <p>
-            Use the official website to verify package options, pricing, and current availability before this deal refreshes again.
-          </p>
-          <a href="#" class="btn btn-white">👉 Visit Official Website Now</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq">
-          <details>
-            <summary>Is this the official Keravita Pro website?</summary>
-            <p>No. This is an independent review page. The official website is linked through the buttons on this page.</p>
-          </details>
-
-          <details>
-            <summary>Where can I check pricing or package options?</summary>
-            <p>The official Keravita Pro website is the best place to verify current package options, pricing, and availability.</p>
-          </details>
-
-          <details>
-            <summary>Why do people read a review page first?</summary>
-            <p>Many visitors prefer a cleaner, faster overview before going to the official website to make a final decision.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="wrap disclaimer">
-    Disclaimer: This website is an independent review page and is not the official Keravita Pro website. This page may contain affiliate links, and commissions may be earned from qualifying purchases. Always verify current package options, ingredients, pricing, and availability on the official website.
-  </footer>
-
-  <div class="sticky-cta">
-    <a href="#" class="btn btn-green pulse">🔥 Check Today's Official Deal</a>
-  </div>
-
-  <script>
-    (function () {
-      let total = 28727;
-
-      function updateCountdown() {
-        const el = document.getElementById("countdown");
-        if (!el) return;
-
-        const h = Math.floor(total / 3600);
-        const m = Math.floor((total % 3600) / 60);
-        const s = total % 60;
-
-        el.textContent =
-          String(h).padStart(2, "0") + ":" +
-          String(m).padStart(2, "0") + ":" +
-          String(s).padStart(2, "0");
-
-        if (total > 0) total--;
-      }
-
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
-    })();
-  </script>
+<script>
+let t=28770;
+setInterval(()=>{
+let h=Math.floor(t/3600);
+let m=Math.floor((t%3600)/60);
+let s=t%60;
+document.getElementById("timer").innerHTML=
+(h<10?"0"+h:h)+":"+(m<10?"0"+m:m)+":"+(s<10?"0"+s:s);
+t--;
+},1000);
+</script>
 
 </body>
 </html>
